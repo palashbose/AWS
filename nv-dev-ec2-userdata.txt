@@ -1,0 +1,9 @@
+#!/bin/bash
+cd /home/ec2-user/
+sudo wget https://github.com/palashbose/AWS/archive/master.zip
+sudo unzip master.zip
+sudo rm -rf master.zip
+sudo mv /home/ec2-user/largescalearchitecture-master/Oct-2018-revised.sh .
+sudo tr -d '\r' <Oct-2018-revised.sh >Oct-2018-revised-new.sh
+sudo chmod 755 Oct-2018-revised-new.sh
+sudo rm -rf Oct-2018-revised.sh
